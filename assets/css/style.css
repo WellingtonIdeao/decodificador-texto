@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+}
+.header {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.header > h1 {
+    width: 120px;
+    height: 48px;
+}
+.main {
+    position: relative;
+}
+.input-container {
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+}
+
+.input-container > input {
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.5rem;
+    color: #0A3871;
+}
+
+.info {
+    position: absolute;
+    width: 252px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+.info > p {
+    display: inline-block;
+    width: 228px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.button-container {
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.button-container > button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.button-main {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.button-secundary {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+
+.result {
+    position: relative;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.result-figure {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}   
+
+.result-message {
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    top: 619px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+
+.result-message > p:first-child {
+    width: 100%;
+    padding: 10px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #343A40;
+}
+
+.result-message > p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;;
+    line-height: 1.5rem;
+    text-align: center;
+    height: 48px;
+}
+
+.result-button {
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 850px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    background-color: #FFFFFF;
+}
+
