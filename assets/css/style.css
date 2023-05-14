@@ -1,160 +1,225 @@
 * {
     box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+.b-body {
+    display: flex;
+    margin: 4rem 0 0 4rem;
+    gap: 8rem;
+    background-color: #F3F5FC;
+
+} 
+.b-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    width: 12rem;
+    height: 4.8rem;
+}
+.b-header > h1 {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.b-header__logo {    
+    width: 12rem;
+    height: 4.8rem;
+}
+.b-main {
+    display: flex;
+    column-gap: 4rem;
+}
+.b-input-area {
+    position: relative;
+    width: 68rem;
+    height: 94vh;
+}
+.b-input-area__message {
+    position: absolute;
+    top: 16.8rem;
+}
+.b-text-input {
+    width: 68rem;
+    height: 4.8rem;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    color: #0A3871;
 }
-body {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    background: #F3F5FC;
-}
-.header {
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
-}
-
-.header > h1 {
-    width: 120px;
-    height: 48px;
-}
-.main {
-    position: relative;
-}
-.input-container {
-    position: absolute;
-    width: 680px;
-    height: 48px;
-    left: 240px;
-    top: 168px;
-}
-
-.input-container > input {
-    width: 100%;
-    font-size: 32px;
-    line-height: 1.5rem;
+.b-text-input_blue {
     color: #0A3871;
 }
 
-.info {
+.b-input-area__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 2.4rem;
+
     position: absolute;
-    width: 252px;
-    height: 18px;
-    left: 240px;
-    top: 851px;
+    width: 68rem;
+    height: 6.7rem;
+    top: 78.5rem;
+
+}
+.b-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.4rem;
+
+    width: 32.8rem;
+    height: 6.7rem;
+
+    border-radius: 2.4rem;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    flex: none;
+    flex-grow: 0;
+}
+.b-btn_ord-0 {
+    order: 0;
+}
+.b-btn_ord-1 {
+    order: 1;
+}
+.b-btn_lightblue {
+    background-color:#D8DFE8;
+    color: #0A3871;
+    border: 0.1rem solid #0A3871;
+}
+.b-btn_blue {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+.b-btn_white {
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border: 0.1rem solid #0A3871;
 }
 
-.info > p {
-    display: inline-block;
-    width: 228px;
-    height: 18px;
+.b-input-area__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0.8rem;
+
+    position: absolute;
+    width: 25.2rem;
+    height: 1.8rem;
+    top: 76rem;
+}
+.b-input-area__label > i {
+    font-size: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.b-input-area__label > span {
+    width: 22.8rem;
+    height: 1.8rem;
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 150%;
+    line-height: 1.8rem;
+
     color: #495057;
     opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
-.button-container {
+.b-result-area {
     position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
-}
-
-.button-container > button {
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-}
-
-.button-main {
-    background: #0A3871;
-    color: #FFFFFF;
-}
-
-.button-secundary {
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-    color: #0A3871;
-}
-
-
-.result {
-    position: relative;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+    width: 48rem;
+    height: 94vh;
+    left: 100rem;
+    top: 4rem;
     background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+
+    box-shadow: 0 2.4rem 3.2rem -0.8rem rgba(0, 0, 0, 0.08);
+    border-radius: 3.2rem;
+}
+.b-result-area__content {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    width: 33.6rem;
+    left: 50%;
+    top: 20rem;
+    transform: translate(-50%);
+}
+.b-result-area__img {
+    width: 33.6rem;
+    height: 30.4rem;
 }
 
-.result-figure {
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    top: 283px;
-    left: 50%;
-    transform: translate(-50%, 0);
-}   
+.b-result-area__message {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    width: 33.6rem;
+    height: 12.2rem;
 
-.result-message {
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    top: 619px;
-    left: 50%;
-    transform: translate(-50%, 0);
+}
+.b-text {
+    width: 33.6rem;
+    height: 4.8rem;
     
-}
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 
-.result-message > p:first-child {
-    width: 100%;
-    padding: 10px;
-    height: 58px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2rem;
     text-align: center;
+    color: #495057;
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.b-text_lg {
+    height: 5.8rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
     color: #343A40;
 }
 
-.result-message > p {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;;
-    line-height: 1.5rem;
-    text-align: center;
-    height: 48px;
+.b-text_ord-0 {
+    order: 0;
+}
+.b-text_ord-1 {
+    order: 1;
+}
+.b-result-area__btn {
+    position: absolute;
+    width: 33.6rem;
+    height: 6.7rem;
+    left: 50%;
+    top: 78.5rem;
+    transform: translate(-50%);
 }
 
-.result-button {
-    position: absolute;
-    width: 336px;
-    height: 67px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top: 850px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #0A3871;
-    background-color: #FFFFFF;
-}
 
