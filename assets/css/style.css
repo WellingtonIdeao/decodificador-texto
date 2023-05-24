@@ -55,7 +55,7 @@ main {
 
 .message {
     background-color: #FFFFFF;
-    background-image: url(/assets/images/picture.png);
+    background-image: url(../images/picture.png);
     background-position: center;
     background-repeat: no-repeat;
     border: none;
